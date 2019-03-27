@@ -1,0 +1,6 @@
+[submodule "root-chain"]
+	path = root-chain
+	url = git@github.com:cryptape/ckb-demo-ruby-sdk.git
+[submodule "subchain"]
+	path = subchain
+	url = git@github.com:cryptape/cita-crosschain-contracts.git
