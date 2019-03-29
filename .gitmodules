@@ -4,3 +4,6 @@
 [submodule "subchain"]
 	path = subchain
 	url = git@github.com:cryptape/cita-crosschain-contracts.git
+[submodule "cita"]
+	path = cita
+	url = git@github.com:cryptape/cita.git
