@@ -2,21 +2,21 @@
 
 set -e -o pipefail
 
-cd root-chain/
+cd root-chain
 ruby prepare.rb
-cd ../
+cd ..
 
-./env.sh bash crosschain.sh deploy
+./env.sh bash subchain.sh deploy
 
-cd root-chain/
+cd root-chain
 ruby deposit.rb
 ruby monitor.rb
-cd ../
+cd ..
 
-./env.sh bash crosschain.sh issue
+./env.sh bash subchain.sh issue
 
-./env.sh bash crosschain.sh burn
+./env.sh bash subchain.sh burn
 
-cd root-chain/
+cd root-chain
 ruby exit.rb
-cd ../
+cd ..
